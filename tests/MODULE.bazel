@@ -16,6 +16,18 @@ bazel_dep(name = "rules_wpiformat", version = "2024.45")
 bazel_dep(name = "rules_wpi_styleguide", version = "2024.11.19")
 bazel_dep(name = "rules_spotless", version = "2.40.0")
 bazel_dep(name = "rules_bzlmodrio_jdk", version = "17.0.12-7")
+archive_override(
+    module_name = "rules_bzlmodrio_jdk",
+    integrity = "sha256-SrikyrF2v2lENdqn9aFC//d0TkIE620lR60yXTrWFTs=",
+    strip_prefix = "rules_bzlmodrio_jdk-4ecd4cbc97dfbfe2ceefa627de1228e2f2ca5773",
+    urls = ["https://github.com/wpilibsuite/rules_bzlmodRio_jdk/archive/4ecd4cbc97dfbfe2ceefa627de1228e2f2ca5773.tar.gz"],
+)
+archive_override(
+    module_name = "rules_bzlmodrio_toolchains",
+    integrity = "sha256-lYEwsSVQaoEZm2BkS6USeqnD4xLO+TaggwKCdGnciXE=",
+    strip_prefix = "rules_bzlmodrio_toolchains-39c30a642687eec03d1dd514af9282a1141616d4",
+    urls = ["https://github.com/wpilibsuite/rules_bzlmodrio_toolchains/archive/39c30a642687eec03d1dd514af9282a1141616d4.tar.gz"],
+)
 
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
