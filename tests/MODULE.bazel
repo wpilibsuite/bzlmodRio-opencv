@@ -25,8 +25,6 @@ bazel_dep(name = "rules_wpiformat", version = "2024.45")
 bazel_dep(name = "rules_wpi_styleguide", version = "2024.11.19")
 bazel_dep(name = "rules_spotless", version = "2.40.0")
 bazel_dep(name = "rules_bzlmodrio_jdk", version = "17.0.12-7")
-
-# TODO - TEMPORARY OVERRIDE
 archive_override(
     module_name = "rules_bzlmodrio_jdk",
     integrity = "sha256-SrikyrF2v2lENdqn9aFC//d0TkIE620lR60yXTrWFTs=",
