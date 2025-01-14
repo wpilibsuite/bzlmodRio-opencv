@@ -79,6 +79,7 @@ load("@rules_wpi_styleguide//dependencies:load_pins.bzl", "load_styleguide_pins"
 load_styleguide_pins()
 #####################
 
+# TODO - TEMPORARY OVERRIDE
 http_archive(
     name = "rules_bzlmodrio_jdk",
     integrity = "sha256-SrikyrF2v2lENdqn9aFC//d0TkIE620lR60yXTrWFTs=",
