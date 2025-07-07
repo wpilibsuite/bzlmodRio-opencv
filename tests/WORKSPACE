@@ -49,30 +49,6 @@ http_archive(
 )
 
 http_archive(
-    name = "rules_pmd",
-    sha256 = "676aea680376c32dfaab2293962f95f7755c14183833b3cd8f62323f43b7cf75",
-    url = "https://github.com/bzlmodRio/rules_pmd/releases/download/7.2.0.bcr1/rules_pmd-7.2.0.bcr1.tar.gz",
-)
-
-http_archive(
-    name = "rules_checkstyle",
-    sha256 = "7bfc1e0d587a30da4c6f0865fe8a8f2c5dfeaa188a3dd7047a4b9d0ba7192e4c",
-    url = "https://github.com/bzlmodRio/rules_checkstyle/releases/download/10.12.2.bcr1/rules_checkstyle-10.12.2.bcr1.tar.gz",
-)
-
-http_archive(
-    name = "rules_wpiformat",
-    sha256 = "d27a5706aff034c84fca018f46c751575792a2ef267cb5a9af70c677b2b52c40",
-    url = "https://github.com/bzlmodRio/rules_wpiformat/releases/download/2025.33/rules_wpiformat-2025.33.tar.gz",
-)
-
-http_archive(
-    name = "rules_spotless",
-    sha256 = "edb9b9768a44c23110b446624dcfd6717302cec51e5cad0b9156690d169bc8d5",
-    url = "https://github.com/bzlmodRio/rules_spotless/releases/download/2.40.0.bcr1/rules_spotless-2.40.0.bcr1.tar.gz",
-)
-
-http_archive(
     name = "rules_python",
     sha256 = "690e0141724abb568267e003c7b6d9a54925df40c275a870a4d934161dc9dd53",
     strip_prefix = "rules_python-0.40.0",
@@ -159,30 +135,6 @@ maven_install(
     repositories = maven_repositories,
     # maven_install_json = "//build_scripts/bazel/deps:maven_install.json",
 )
-
-#####################
-# Styleguide
-#####################
-load("@rules_checkstyle//dependencies:load_dependencies.bzl", "load_checkstyle_dependencies")
-load("@rules_pmd//dependencies:load_dependencies.bzl", "load_pmd_dependencies")
-load("@rules_spotless//dependencies:load_dependencies.bzl", "load_spotless_dependencies")
-
-load_checkstyle_dependencies()
-
-load_pmd_dependencies()
-
-load_spotless_dependencies()
-
-load("@rules_checkstyle_dependencies//:defs.bzl", checkstyle_pinned_maven_install = "pinned_maven_install")
-load("@rules_pmd_dependencies//:defs.bzl", pmd_pinned_maven_install = "pinned_maven_install")
-load("@rules_spotless_dependencies//:defs.bzl", spotless_pinned_maven_install = "pinned_maven_install")
-
-pmd_pinned_maven_install()
-
-checkstyle_pinned_maven_install()
-
-spotless_pinned_maven_install()
-#####################
 
 http_archive(
     name = "rules_bzlmodrio_jdk",
