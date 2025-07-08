@@ -12,6 +12,14 @@ bazel_dep(name = "rules_bazelrio", version = "0.0.14")
 bazel_dep(name = "rules_bzlmodrio_toolchains", version = "2025-1.bcr4")
 bazel_dep(name = "rules_bzlmodrio_jdk", version = "17.0.12-7.bcr1")
 
+# TODO replace with released version once they make one that has Austins patch
+archive_override(
+    module_name = "rules_python",
+    integrity = "sha256-cx46XtT7EnCQmo3Ad5AqWOp8dB6kTGrXVmKCCwjadxw=",
+    strip_prefix = "rules_python-29a7f6a0d5c8996f4d3f36e08269e0faf478927b",
+    urls = ["https://github.com/bazel-contrib/rules_python/archive/29a7f6a0d5c8996f4d3f36e08269e0faf478927b.tar.gz"],
+)
+
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
     artifacts = [
