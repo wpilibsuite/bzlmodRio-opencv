@@ -7,6 +7,7 @@ import org.opencv.core.Mat;
 public final class Main {
   private Main() {}
 
+  @SuppressWarnings("restricted")
   public static void main(String[] args) {
     System.out.println("Hello World");
     System.out.println(System.getProperty("user.dir"));

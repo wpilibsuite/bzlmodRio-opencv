@@ -15,9 +15,9 @@ http_archive(
 
 http_archive(
     name = "rules_java",
-    sha256 = "d31b6c69e479ffa45460b64dc9c7792a431cac721ef8d5219fc9f603fa2ff877",
+    sha256 = "1b30698d89dccd9dc01b1a4ad7e9e5c6e669cdf1918dbb050334e365b40a1b5e",
     urls = [
-        "https://github.com/bazelbuild/rules_java/releases/download/8.11.0/rules_java-8.11.0.tar.gz",
+        "https://github.com/bazelbuild/rules_java/releases/download/8.16.1/rules_java-8.16.1.tar.gz",
     ],
 )
 
@@ -92,7 +92,7 @@ rules_jvm_external_setup()
 load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_artifacts, maven_repositories = [
-    "edu.wpi.first.thirdparty.frc2025.opencv:opencv-java:4.10.0-3",
+    "org.wpilib.thirdparty.opencv:opencv-java:2027-4.13.0-3",
 ], [
     "https://repo1.maven.org/maven2",
     "https://frcmaven.wpi.edu/release",
@@ -107,13 +107,3 @@ maven_install(
 load("@maven//:defs.bzl", "pinned_maven_install")
 
 pinned_maven_install()
-
-http_archive(
-    name = "rules_bzlmodrio_jdk",
-    sha256 = "623b8bcdba1c3140f56e940365f011d2e5d90d74c7a30ace6a8817c037c1dd61",
-    url = "https://github.com/wpilibsuite/rules_bzlmodRio_jdk/releases/download/17.0.12-7.bcr1/rules_bzlmodrio_jdk-17.0.12-7.bcr1.tar.gz",
-)
-
-load("@rules_bzlmodrio_jdk//:maven_deps.bzl", "setup_legacy_setup_jdk_dependencies")
-
-setup_legacy_setup_jdk_dependencies()

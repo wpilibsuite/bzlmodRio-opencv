@@ -10,18 +10,9 @@ def _setup_toolchains():
     load_toolchains()
 
     native.register_toolchains(
-        "@local_roborio//:macos",
-        "@local_roborio//:linux",
-        "@local_roborio//:windows",
         "@local_systemcore//:macos",
         "@local_systemcore//:linux",
         "@local_systemcore//:windows",
-        "@local_rp_bookworm32//:macos",
-        "@local_rp_bookworm32//:linux",
-        "@local_rp_bookworm32//:windows",
-        "@local_bookworm32//:macos",
-        "@local_bookworm32//:linux",
-        "@local_bookworm32//:windows",
         "@local_bookworm64//:macos",
         "@local_bookworm64//:linux",
         "@local_bookworm64//:windows",

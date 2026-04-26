@@ -5,6 +5,6 @@ java_library(
     visibility = ["//visibility:public"],
     exports = [
         "@bzlmodrio-opencv//libraries/cpp/opencv:jni",
-        "@maven//:edu_wpi_first_thirdparty_frc2025_opencv_opencv_java",
+        "@maven//:org_wpilib_thirdparty_opencv_opencv_java",
     ],
 )

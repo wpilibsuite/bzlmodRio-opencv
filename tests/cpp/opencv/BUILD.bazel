@@ -10,6 +10,10 @@ cc_binary(
 cc_test(
     name = "test",
     srcs = ["test.cpp"],
+    linkopts = select({
+        "@platforms//os:windows": ["-DEFAULTLIB:ole32.lib"],
+        "//conditions:default": [],
+    }),
     tags = [
         "bazelrio-cpp-test",
         "no-sandbox",
