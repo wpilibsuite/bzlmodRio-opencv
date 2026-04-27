@@ -1,7 +1,6 @@
 load("@rules_bzlmodrio_toolchains//cc:cc_shared_import.bzl", "cc_shared_import")
 
 opencv_libraries = [
-    "aruco",
     "calib3d",
     "core",
     "dnn",

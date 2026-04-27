@@ -6,6 +6,7 @@ import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 
 class BasicTest {
+  @SuppressWarnings("restricted")
   @Test
   void basicTest() {
     System.out.println("Hello World");
