@@ -9,12 +9,12 @@ build --test_env=LD_LIBRARY_PATH=.
 build --test_env=DYLD_LIBRARY_PATH=.
 
 # systemcore
-build:systemcore --platforms=@rules_bzlmodrio_toolchains//platforms/systemcore
+build:systemcore --platforms=@wpilib_toolchains//platforms/systemcore
 build:systemcore --build_tag_filters=-no-systemcore
 build:systemcore --platform_suffix=systemcore
 
 # bookworm64
-build:bookworm64 --platforms=@rules_bzlmodrio_toolchains//platforms/bookworm64
+build:bookworm64 --platforms=@wpilib_toolchains//platforms/bookworm64
 build:bookworm64 --build_tag_filters=-no-bookworm64
 build:bookworm64 --platform_suffix=bookworm64
 
