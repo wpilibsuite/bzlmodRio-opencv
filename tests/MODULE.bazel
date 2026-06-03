@@ -11,6 +11,12 @@ bazel_dep(name = "rules_java", version = "8.16.1")
 bazel_dep(name = "rules_jvm_external", version = "6.8")
 bazel_dep(name = "rules_bazelrio", version = "0.0.14")
 bazel_dep(name = "wpilib_toolchains", version = "2025-1.bcr7")
+archive_override(
+    module_name = "wpilib_toolchains",
+    integrity = "sha256-rchWcXOm2L0BmFb1ieb8G6OzfrJPN+TKQpcPjSvCqQ8=",
+    strip_prefix = "rules_bzlmodrio_toolchains-5380e26ffa0d40f42adcc3c633ee82c5b708bb4b",
+    urls = ["https://github.com/wpilibsuite/rules_bzlmodrio_toolchains/archive/5380e26ffa0d40f42adcc3c633ee82c5b708bb4b.tar.gz"],
+)
 
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
