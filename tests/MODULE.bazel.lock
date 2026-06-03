@@ -231,7 +231,7 @@
     },
     "@@bzlmodrio-opencv+//:maven_cpp_deps.bzl%setup_bzlmodrio_opencv_cpp_dependencies": {
       "general": {
-        "bzlTransitiveDigest": "11mGZregofBLfQ6B/E4R3E9i6KfynvmY7gaF3mSFo5M=",
+        "bzlTransitiveDigest": "ktgNQhe6LJiLeU5qvAssfcTt2n5q/UE7l7PTilaFYqE=",
         "usagesDigest": "TSwEVwE3G8osZtttlQTuj9WxukJ57o5CNQR7RTUGbCY=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
@@ -242,7 +242,7 @@
             "attributes": {
               "url": "https://frcmaven.wpi.edu/release/org/wpilib/thirdparty/opencv/opencv-cpp/2027-4.13.0-3/opencv-cpp-2027-4.13.0-3-headers.zip",
               "sha256": "e1454fadad5c6b525a43388e7be63bc6d5e25f74c221ab5ad18f2b3f61f030d6",
-              "build_file_content": "cc_library(\n    name = \"headers\",\n    hdrs = glob([\"**\"]),\n    includes = [\".\"],\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"header_files\",\n    srcs = glob([\"**\"]),\n    visibility = [\"//visibility:public\"],\n)\n"
+              "build_file_content": "load(\"@rules_cc//cc:defs.bzl\", \"cc_library\")\n\ncc_library(\n    name = \"headers\",\n    hdrs = glob([\"**\"]),\n    includes = [\".\"],\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"header_files\",\n    srcs = glob([\"**\"]),\n    visibility = [\"//visibility:public\"],\n)\n"
             }
           },
           "org_wpilib_opencv-cpp_sources": {
