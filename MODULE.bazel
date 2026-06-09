@@ -9,9 +9,9 @@ bazel_dep(name = "rules_cc", version = "0.2.13")
 bazel_dep(name = "rules_java", version = "8.16.1")
 bazel_dep(name = "rules_bzlmodrio_toolchains", version = "2025-1.bcr7")
 
-setup_bzlmodrio_opencv_cpp_dependencies = use_extension("//:maven_cpp_deps.bzl", "setup_bzlmodrio_opencv_cpp_dependencies")
+deps = use_extension("//:maven_cpp_deps.bzl", "deps")
 use_repo(
-    setup_bzlmodrio_opencv_cpp_dependencies,
+    deps,
     "org_wpilib_opencv-cpp_headers",
     "org_wpilib_opencv-cpp_linuxarm64",
     "org_wpilib_opencv-cpp_linuxarm64debug",

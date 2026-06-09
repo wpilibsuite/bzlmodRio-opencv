@@ -199,6 +199,6 @@ def __setup_bzlmodrio_opencv_cpp_dependencies(mctx):
         )
 
 
-setup_bzlmodrio_opencv_cpp_dependencies = module_extension(
+deps = module_extension(
     __setup_bzlmodrio_opencv_cpp_dependencies,
 )

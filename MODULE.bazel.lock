@@ -185,10 +185,10 @@
   },
   "selectedYankedVersions": {},
   "moduleExtensions": {
-    "//:maven_cpp_deps.bzl%setup_bzlmodrio_opencv_cpp_dependencies": {
+    "//:maven_cpp_deps.bzl%deps": {
       "general": {
-        "bzlTransitiveDigest": "11mGZregofBLfQ6B/E4R3E9i6KfynvmY7gaF3mSFo5M=",
-        "usagesDigest": "IUCL8zrkL9y/RkeTrH9WCuFnNWmZCc/RjeDJD2Kj5/c=",
+        "bzlTransitiveDigest": "PfMs1b1k89wb40BfsVreHn+RMLSZuQpPukZOyED2grQ=",
+        "usagesDigest": "5Ad4+xMfRq0eE9QkOyV5BCyJ+BxNYQt+MoItD0V5hQw=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
