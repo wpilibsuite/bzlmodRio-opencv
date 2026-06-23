@@ -1,4 +1,4 @@
-load("@rules_bzlmodrio_toolchains//cc:cc_shared_import.bzl", "cc_shared_import")
+load("@wpilib_toolchains//cc:cc_shared_import.bzl", "cc_shared_import")
 
 opencv_libraries = [
     "calib3d",

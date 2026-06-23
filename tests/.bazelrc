@@ -9,16 +9,17 @@ build --test_env=LD_LIBRARY_PATH=.
 build --test_env=DYLD_LIBRARY_PATH=.
 
 # systemcore
-build:systemcore --platforms=@rules_bzlmodrio_toolchains//platforms/systemcore
+build:systemcore --platforms=@wpilib_toolchains//platforms/systemcore
 build:systemcore --build_tag_filters=-no-systemcore
 build:systemcore --platform_suffix=systemcore
 
-# bookworm64
-build:bookworm64 --platforms=@rules_bzlmodrio_toolchains//platforms/bookworm64
-build:bookworm64 --build_tag_filters=-no-bookworm64
-build:bookworm64 --platform_suffix=bookworm64
+# trixie64
+build:trixie64 --platforms=@wpilib_toolchains//platforms/trixie64
+build:trixie64 --build_tag_filters=-no-trixie64
+build:trixie64 --platform_suffix=trixie64
 
-build:linuxarm64 --config=bookworm64
+# Alias toolchain names to what wpilibsuite uses for CI/Artifact naming
+build:linuxarm64 --config=trixie64
 
 test --test_output=errors
 common --registry=https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/
