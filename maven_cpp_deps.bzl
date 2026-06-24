@@ -199,6 +199,10 @@ def __setup_bzlmodrio_opencv_cpp_dependencies(mctx):
             static_repository_name = static_repository_name,
         )
 
+    return mctx.extension_metadata(
+        reproducible = True,
+    )
+
 deps = module_extension(
     __setup_bzlmodrio_opencv_cpp_dependencies,
 )
