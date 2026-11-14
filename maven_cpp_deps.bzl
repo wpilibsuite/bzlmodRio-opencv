@@ -137,38 +137,38 @@ _download_and_generate = repository_rule(
 
 def __setup_bzlmodrio_opencv_cpp_dependencies(mctx):
     headers_hash = "e1454fadad5c6b525a43388e7be63bc6d5e25f74c221ab5ad18f2b3f61f030d6"
-    sources_hash = "28b35e66a3cc6c4667cddd915ad4db8182fd45482595d8efdc73e08b006ceeab"
+    sources_hash = "d54070cb21a52f034aab0e07f37ae720d3f6a6279925274f9980ce1af15a7295"
 
     hash_pairs = {
-        "linuxarm64": ("90a81046e444fe035cdc4795e74149df8e31a70ba817f4c2e8b2966b71f92b85", "2f4f65049e8418d4132fa0b0e95164a3e14cf5938c14a3525e5760dda34d5984"),
-        "linuxarm64debug": ("364a7f50320f8dbd69a6fb1ee89caf3570393a9c86c38ebc22c649256f700e23", "7884e90b4e51f75216a1b875e1039ca96d2b5aab47d88a64ea4d1a812fe625a7"),
-        "linuxsystemcore": ("0b8628bc0c0c0e7b45c93dde740203ba45d5157ed98273145f5f148e890acc11", "74aad4a7f48519d097c532e08d67b8429d55fb0699257a86b5641de7b038f35a"),
-        "linuxsystemcoredebug": ("de2552db3994d846d018c43e2a5f7619328edb0708a0db10dd7e050e7fc0907a", "c7aa613d8c7e6231abd825a99660d4cfdeea132fd6023856e9b55d0f283dc95e"),
-        "linuxx86-64": ("9da8059c46572071bacd13f0b2288282e65853abbee9ba0cce99eeee7d0a8b59", "ab3b4bd1ef182bd4e6f16d7c9569147667e2a89ab8799f4d0de9c463f2399789"),
-        "linuxx86-64debug": ("20c2882dc8bfaef50f4eb10f28ccc9d385cbe58750a917ce2571a2e787f5411d", "994c2a30ab9aecdfee2730f198d2aa9cc920be4480c2f4a13cd569714b8274c9"),
-        "osxarm64": ("5b04598eed6e4f33994aa834d7df13d862a97571cc1aca43f2f402f520878568", "6512c351254d34b33e796c2a9103fe7771a2b0cda582443b98d26ecbc819d04b"),
-        "osxarm64debug": ("3d9f17248cd9f65bd37839b4fc838e167776139770fbe7ecec7936fb94a77741", "79c61cf30d5559a60f2f37a778bd8b890ace738bee0a94229018f0997a191fd6"),
-        "osxuniversal": ("1dadc172e9241d0dfc10f506d76a8635e1726f09f9d329aa2c8853a0d3ef63d4", "d1fc11ff74a06dbb721945564b254b6e25a9e98eb47258adca80d49ee076a9d2"),
-        "osxuniversaldebug": ("f119c67f6dcfef74347d58a894be19c8988cdf1ee17126113eefc8d749782698", "7d75ab07e54d4d71eccfe33821e4a9a7508ecac371f99bc341584f8d4798bb4c"),
-        "osxx86-64": ("1be9dcc9db720224ec024215c8b7ad7cffe72323122727a773184ddef4c38579", "912cea1c5b29aeda4befe09cc50882a22b180e3c798e35fda678a18130ac0183"),
-        "osxx86-64debug": ("33f2e0f1a67c9555cc11970acd7e55fbcf2d3f45eb72e1b21430c24f8cbed894", "764c70e143f3c79772c0a34bd61a0301384a5d9985ad43a80551ba9a30d3fbe0"),
-        "windowsarm64": ("52f8a756cc79f8822d6b47a79a5eeaa4a142df59a11882ae7f212377723641c8", "4c4eacfbee78e497da6178d95f9417d8f3b84a193769b26dd5138f0e43803e76"),
-        "windowsarm64debug": ("ed79a7ca116caab00a1132ae8df6616ca9a43fe479493ac8bceb0026603e5d6c", "f38c54484d42df69d723c431768b19cd01e25a42ad9384047f5b42523c0fa038"),
-        "windowsx86-64": ("47843b292e5b4c5f0331fc6c8f3d26a3f22db2438e25379eb87bbb28a6be1288", "34e9c1b5af0d37622f0b9d40fed408aeecc46d772eb64278cf2318e0892e0e31"),
-        "windowsx86-64debug": ("353275e28d1b4bf093427b6e68889432c0c61974a14bc2372dc4455ccd44ab58", "022d23a87f8c213a78fe5d50177c217cdd61f164990594952d83dc319454ab56"),
+        "linuxarm64": ("dedd410d37d81ed45a32f89c4b421f19adc7152b0b27e2bba53dd8b880171ffc", "a1666b92ae9d434bb5cf2c43ee1c39d7cae64d661a0ad0516d7d9ef719936a0a"),
+        "linuxarm64debug": ("da6d822474f7a9aca2ac5606075e9c38b3caea52ea77c47484955239c278c4b9", "15761705913b82b7547866d48c5b22062c58dbb1f52df787828144ac100f86e2"),
+        "linuxsystemcore": ("90c1ecbc7b1192435c558a462b9d2448931e118e937bc05437fa0b9137d8366d", "ced7f8513ba12d8a23d32b5c102de4771f7eba468a1043bc92e415e8494c84c7"),
+        "linuxsystemcoredebug": ("afd42ef9e8a3421045ed14f65d73a279dffe77b9f91c46e6829ff48cfb443a83", "33086e571522669c4ae89adf3c5eafe9a0ce008728e3711ca7ce8dcfa5fb772a"),
+        "linuxx86-64": ("df562dea20e832ed3191003e28077e9ff9ff3f9cdd147e8acce475b28ef3f2ac", "47ad7b5f6d5fd56a8bdd791969fd666bda73ea651a57edd6de9e00a3404accb5"),
+        "linuxx86-64debug": ("3cef6e58e65131aaccc85cefa3400169172d24eda10a228fb782763f5fc37843", "ee5c94037bfb872e67b113f9c71078f97a6dbf1025a0b8ec90de1bb8d0668e9a"),
+        "osxarm64": ("b4395bc7055bfd9bf6629db773114c41d74c5d3f1221567b394a3a82471ba8f0", "c71e49f4119f4c657985bb84a0f4a68c7cae293e8ad681a7a061ec9a189d8ce4"),
+        "osxarm64debug": ("8e92ff11763dbb21739b05a5cd280c5e49988453bc38c1721634d0c459f01a36", "9724cef14f7e54db0379d294e4a355539a65d5a4aeab081ccd43927d82b44d3b"),
+        "osxuniversal": ("e95704806bf828b2fbbb735d7b51cfbdf02a6065cbbe190c36ca16fe1fc49f2f", "80eabd49e90c04b8e9959b1855034da8996ee465e1caa585b8f3b798a1df3fda"),
+        "osxuniversaldebug": ("1782dae9494ddbeed275f167654ac22abd942e9947af4031a8b4f31400eec5e1", "8aef12004e1f0e79607d3bb9bc62972baa0ef8b0a0044172f91d4dcc565b2c04"),
+        "osxx86-64": ("b1a5d3ebab801c94709c9fe5e0e5959f6b0a0c67beb07120be1840785ca2bddf", "0751d031bc300450f5db8f106cdc94636993f7376e9c8fb06face2521fe7d59f"),
+        "osxx86-64debug": ("493ce50da6ea839322564a0f54029714aef3879f6b8dd3fb280565b126b8535c", "30929a678faa086e7287009c64a6900eb1c813c4fbedc3790c978481168bb66f"),
+        "windowsarm64": ("c493364ace960a1fe276765d6c3c68381ad0d7646a05ece78877ae4bb6b0a21e", "8fcf6b939cfe010d8b9ac30d530a4f689669ab1d964825aca1f6e27e4bc5e45b"),
+        "windowsarm64debug": ("dd0d4e21b3219c08cfa89947c7d0099022ab4ffec4a8d40302ca0ca6d1be0f31", "0347445f2229007451b4eac70dea124ddb43f56c484248a07091db38ad12830f"),
+        "windowsx86-64": ("a62ae58896626fb6c8bfb863c1af67b23bb4b1844620d99d65a1d8f4b095b953", "cdc2319d047ab3238ac84d1dbbd75751689e09e4966ebdd4a3e91101326c2bd6"),
+        "windowsx86-64debug": ("a36baa0ea955179cc55a25ab22125b52b7602b47d60115ec5e3ba89e6e94567a", "4aac1f8c233968c28214882b545262eaf4490d8d0983f059ffe3b8a60eceae33"),
     }
 
     maybe(
         http_archive,
         "org_wpilib_opencv-cpp_headers",
-        url = "https://frcmaven.wpi.edu/release/org/wpilib/thirdparty/opencv/opencv-cpp/2027-4.13.0-3/opencv-cpp-2027-4.13.0-3-headers.zip",
+        url = "https://frcmaven.wpi.edu/release/org/wpilib/thirdparty/opencv/opencv-cpp/2027-4.13.0-4/opencv-cpp-2027-4.13.0-4-headers.zip",
         sha256 = headers_hash,
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
         "org_wpilib_opencv-cpp_sources",
-        url = "https://frcmaven.wpi.edu/release/org/wpilib/thirdparty/opencv/opencv-cpp/2027-4.13.0-3/opencv-cpp-2027-4.13.0-3-sources.zip",
+        url = "https://frcmaven.wpi.edu/release/org/wpilib/thirdparty/opencv/opencv-cpp/2027-4.13.0-4/opencv-cpp-2027-4.13.0-4-sources.zip",
         sha256 = sources_hash,
         build_file_content = cc_library_sources,
     )
@@ -180,8 +180,8 @@ def __setup_bzlmodrio_opencv_cpp_dependencies(mctx):
         else:
             static_name = platform + "static"
 
-        shared_url = "https://frcmaven.wpi.edu/release/org/wpilib/thirdparty/opencv/opencv-cpp/2027-4.13.0-3/opencv-cpp-2027-4.13.0-3-" + shared_name + ".zip"
-        static_url = "https://frcmaven.wpi.edu/release/org/wpilib/thirdparty/opencv/opencv-cpp/2027-4.13.0-3/opencv-cpp-2027-4.13.0-3-" + static_name + ".zip"
+        shared_url = "https://frcmaven.wpi.edu/release/org/wpilib/thirdparty/opencv/opencv-cpp/2027-4.13.0-4/opencv-cpp-2027-4.13.0-4-" + shared_name + ".zip"
+        static_url = "https://frcmaven.wpi.edu/release/org/wpilib/thirdparty/opencv/opencv-cpp/2027-4.13.0-4/opencv-cpp-2027-4.13.0-4-" + static_name + ".zip"
         static_repository_name = "org_wpilib_opencv-cpp_" + static_name
         shared_repository_name = "org_wpilib_opencv-cpp_" + shared_name
         maybe(
