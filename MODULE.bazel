@@ -1,15 +1,10 @@
-YEAR = "2027"
-
-OPENCV_VERSION = "4.13.0-4"
-
-BZLMOD_PATCH = ""
-
-MAVEN_VERSION = YEAR + "-" + OPENCV_VERSION
+# This should roughly match (with .bcr patches) the modules version
+MAVEN_VERSION = "2027-4.13.0-4"
 
 module(
     name = "bzlmodrio-opencv",
-    version = YEAR + "." + OPENCV_VERSION + BZLMOD_PATCH,
-    compatibility_level = int(YEAR),
+    version = "2027.4.13.0-4",
+    compatibility_level = 2027,
 )
 
 bazel_dep(name = "platforms", version = "1.0.0")
